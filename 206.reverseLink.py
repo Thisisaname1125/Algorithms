@@ -4,6 +4,8 @@
 # @Email: zhaozk_bjtu@163.com
 # @Software: Vscode
 """ 反转链表 """
+
+""" 双指针可解. """
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
