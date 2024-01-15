@@ -14,3 +14,25 @@
 # ====================================================================================================================================#
 """ 双指针可解. """
 
+class Solution:
+    def maxArea(self, height) -> int:
+        left, right = 0, len(height) - 1
+        maxarea = -1
+        while left != right:
+            
+            area = min(height[left], height[right]) * (right - left)
+            if area > maxarea:
+                maxarea = area
+            if height[left] <= height[right]:
+                
+                left += 1
+            else:
+                
+                right -= 1
+        return maxarea
+
+if __name__ == "__main__":
+    solution = Solution()
+    height = [10,14,10,4,10,2,6,1,6,12]
+    max = solution.maxArea(height=height)
+    print(max)

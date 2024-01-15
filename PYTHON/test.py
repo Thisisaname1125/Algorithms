@@ -1,3 +1,3 @@
-i = None
-if i:
-    print(6)
+head = []
+if not head:
+    print(5)
