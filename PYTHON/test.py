@@ -1,3 +1,1 @@
-head = []
-if not head:
-    print(5)
+print(all(i == 1 for i in range(0,5)))
